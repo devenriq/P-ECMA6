@@ -1,3 +1,7 @@
+//* Numeric separators
+// const value = 100_000_000_000_000_00;
+// console.log(value);
+
 // const string =
 //   "JavaScript es maravilloso. Con JavaScript puedo crear el futuro de la web";
 
@@ -40,10 +44,10 @@
 //   }
 // }
 
-let isTrue = true;
-let isFalse = false;
-console.log((isTrue &&= isFalse));
+// let isTrue = true;
+// let isFalse = false;
+// console.log((isTrue &&= isFalse));
 
-console.log((isTrue ||= isFalse));
+// console.log((isTrue ||= isFalse));
 
-console.log((isTrue ??= isFalse));
+// console.log((isTrue ??= isFalse));
