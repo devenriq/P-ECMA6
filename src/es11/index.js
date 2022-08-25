@@ -30,7 +30,7 @@
 // console.log(window);
 // console.log(globalThis);
 
-// //* Operador null
+//* Operador null
 
 // const fooo = null ?? "default string";
 // console.log(fooo);
@@ -45,10 +45,22 @@
 //   console.log("No existe email");
 // }
 
-const regex = /\b(Apple)+\b/g;
+//* matchAll
 
-const fruit = "Apple, Banana, kiwi, apple, orange, ";
+// const regex = /\b(Apple)+\b/g;
 
-for (const match of fruit.matchAll(regex)) {
-  console.log(match);
-}
+// const fruit = "Apple, Banana, kiwi, apple, orange, ";
+
+// for (const match of fruit.matchAll(regex)) {
+//   console.log(match);
+// }
+
+//* Dynamic Import
+
+const button = document.querySelector("#btn");
+
+button.addEventListener("click", async function () {
+  const module = await import("./module.js");
+  console.log(module);
+  module.hello();
+});
