@@ -35,12 +35,20 @@
 // const fooo = null ?? "default string";
 // console.log(fooo);
 
-const user = {};
+// const user = {};
 
-console.log(user?.profile?.email);
+// console.log(user?.profile?.email);
 
-if (user?.profile?.email) {
-  console.log("Existe email");
-} else {
-  console.log("No existe email");
+// if (user?.profile?.email) {
+//   console.log("Existe email");
+// } else {
+//   console.log("No existe email");
+// }
+
+const regex = /\b(Apple)+\b/g;
+
+const fruit = "Apple, Banana, kiwi, apple, orange, ";
+
+for (const match of fruit.matchAll(regex)) {
+  console.log(match);
 }
